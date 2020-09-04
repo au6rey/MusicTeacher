@@ -1,0 +1,158 @@
+.whitenote {
+  height: 100%;
+  width: 46px;
+  float: left;
+  position: relative;
+  background: white;
+  overflow: visible;
+
+  border-right: 1px solid black;
+}
+
+.blacknote {
+  position: inherit;
+  height: 65%;
+  width: 59%;
+  left: 70%;
+  z-index: 1;
+  background: #777;
+}
+
+.keyboard {
+  position: absolute;
+  left: calc(50% - 360px);
+  /* margin-top: 50px; */
+  height: 500px;
+  width: 960px;
+  background-color: lightcyan;
+
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+.keyboard #frame {
+  position: absolute;
+  border: 5px solid black;
+  border-radius: 10px;
+  height: 360px;
+  width: 680px;
+  left: calc(50% - 400px);
+  background-color: rgb(255, 218, 218);
+
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+.keyboard #keyscontainer {
+  position: absolute;
+  margin: 10px;
+  margin-top: 101px;
+  border: 3px solid black;
+  height: 205px;
+}
+
+#notename {
+  text-align: center;
+  font-size: 9px;
+  margin: 2px;
+  position: absolute;
+  opacity: 100%;
+  bottom: 0;
+}
+
+.activeNotes {
+  position: absolute;
+  background-color: rgb(249, 253, 255);
+
+  /* bottom: 0; */
+  width: 300px;
+  height: 50px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+.activeNotes #activenotes {
+  margin: 4px;
+  font-size: 14px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+#noteslist {
+  font-size: 20px;
+  text-align: center;
+  color: rgb(255, 2, 2);
+  margin-top: 4px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slidecontainer {
+  /* width: %; */
+  display: flex;
+  left: unset;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-top: 0px;
+  /* background-color: crimson; */
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 50%;
+  height: 5px;
+  border-radius: 5px;
+  background: #ffffff;
+ 
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 10;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background:black;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background:black;
+  cursor: pointer;
+}
+
+.filter p {
+  margin-bottom: 6px;
+  margin-top: 0px;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  width: 50%;
+  font-size: 13px;
+  border-radius: 10px;
+}
+
+.volume p {
+  
+  margin-bottom: 6px;
+  margin-top: 0px;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  width: 50%;
+  font-size: 13px;
+  border-radius: 10px;
+}

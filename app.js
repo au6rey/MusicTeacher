@@ -22,7 +22,7 @@ mongoose
 // EJS
 app.use(expressLayouts);
 app.set("view engine", "ejs");
-
+app.use(express.static(__dirname + '/views'));
 // Express body parser
 app.use(express.urlencoded({ extended: true }));
 

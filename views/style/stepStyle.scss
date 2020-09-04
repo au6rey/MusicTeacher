@@ -1,0 +1,8 @@
+body > div {
+    text-align: center;
+    > div {
+        +div {
+            margin-top: 1rem;
+        }
+    }
+}
