@@ -17,8 +17,19 @@
   },
   "homepage": "https://github.com/oyoolo/MusicTeacher#readme",
   "dependencies": {
-    "express": "^4.17.1",
-    "gitignore": "^0.6.0",
-    "nodemon": "^2.0.4"
+    "bcryptjs": "^2.4.3",
+    "connect-flash": "^0.1.1",
+    "ejs": "^2.6.1",
+    "ejs-lint": "^1.1.0",
+    "express": "^4.16.4",
+    "express-ejs-layouts": "^2.5.0",
+    "express-session": "^1.15.6",
+    "mongoose": "^5.7.5",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "nodemon": "^1.19.0"
   }
 }
