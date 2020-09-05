@@ -1,4 +1,4 @@
-console.clear();
+// console.clear();
 let channelRack = document.querySelector(".channelRack");
 
 //Fill the rack
@@ -34,9 +34,9 @@ channelRack.innerHTML += colhtml;
 //END OF RENDERING CHANNEL RACK
 
 const audioFiles = [
-  new Tone.Player("../audio/Kick.wav"),
-  new Tone.Player("../audio/Snare.wav"),
-  new Tone.Player("../audio/Hihat.wav"),
+  new Tone.Player("../../tonejs/audio/Kick.wav"),
+  new Tone.Player("../../tonejs/audio/Snare.wav"),
+  new Tone.Player("../../tonejs/audio/Hihat.wav"),
 ];
 
 const gain = new Tone.Gain(1);
@@ -47,7 +47,7 @@ const $rows = document.body.querySelectorAll(".channelRack > tbody > tr ");
 let $playBtn = document.getElementById("play");
 let $stopBtn = document.getElementById("stop");
 console.log($rows);
-const sample = new Tone.Player("audio/plane_162bpm_dripchord.wav").connect(
+const sample = new Tone.Player("../../tonejs/audio/plane_162bpm_dripchord.wav").connect(
   gain
 );
 sample.loop = true;
