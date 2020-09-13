@@ -111,7 +111,7 @@ function onDeviceInput({ _, input, value }) {
     inst.handleFilter(value);
     filterSlider.value = value;
     filtOutput.innerHTML = value;
-  } else if (input >= 48 && input <= 72) {
+  } else if (input >= 48 && input < 72) {
     let keyIndex = midikeys.length - (72 - input);
     let elem = document.getElementById(midikeys[keyIndex]);
     let sharpTest = midikeys[keyIndex].indexOf("#") !== -1;

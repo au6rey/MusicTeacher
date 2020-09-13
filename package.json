@@ -2,7 +2,7 @@
   "name": "music",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "start": "npm app.js",
     "dev": "nodemon app.js"
@@ -27,7 +27,8 @@
     "express-session": "^1.15.6",
     "mongoose": "^5.7.5",
     "passport": "^0.4.0",
-    "passport-local": "^1.0.0"
+    "passport-local": "^1.0.0",
+    "tone": "^14.7.39"
   },
   "devDependencies": {
     "dotenv": "^8.2.0",

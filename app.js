@@ -5,6 +5,7 @@ const passport = require("passport");
 const flash = require("connect-flash");
 const session = require("express-session");
 
+
 const app = express();
 
 // Passport Config
@@ -23,6 +24,7 @@ mongoose
 app.use(expressLayouts);
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + '/views'));
+app.use(express.static(__dirname + '/tonejs'));
 // Express body parser
 app.use(express.urlencoded({ extended: true }));
 
