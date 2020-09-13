@@ -78,7 +78,7 @@ class Instrument {
 
   stopSound(note){
     this.synth.triggerRelease(note);
-    event.stopPropagation();
+    // event.stopPropagation();
   }
 
   //Volume control
@@ -152,6 +152,7 @@ function noteUp(elem, isSharp) {
 //Pressed note
 function noteDown(elem, isSharp) {
   var note = elem.dataset.note;
+  if(isSharp){console.log(elem)}
   inst.playSound(note);
   displayNotes(note);
   elem.style.background = isSharp ? "black" : "#ccc";
